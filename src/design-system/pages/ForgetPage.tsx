@@ -21,10 +21,10 @@ const Forgetpage = () => {
       </div>
       <div className="no-scrollbar mx-auto flex max-w-[400px] flex-col items-center overflow-auto">
         <FlagIcon />
-        <h2 className="form-heading mt-6 mb-2 md:mt-8 lg:mt-12">
+        <h2 className="form-heading mt-6 md:mt-8 lg:mt-12">
           Qual è la tua email?
         </h2>
-        <p className="form-sub-heading mt-4 max-w-[400px]">
+        <p className="form-sub-heading mt-2 max-w-[400px]">
           Inserisci il tuo indirizzo email e ti invieremo un link per cambiare
           la tua password.
         </p>
