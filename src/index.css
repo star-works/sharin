@@ -1,1 +1,75 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap");
+
+@theme {
+  /* FONT_FAMILY */
+  --font-inter: "Inter", sans-serif;
+  --font-screamer: "screamer", sans-serif;
+
+  /* COLORS */
+  --color-primary: #afafaf;
+  --color-secondary: #767676;
+  --color-kingly: #191919;
+
+  /* FONT-SIZE */
+  --text-56: 56px;
+
+  /* LINE_HEIGHT */
+  --leading-l1: 150%;
+  --leading-l2: 142.857%;
+  --leading-l3: 133.333%;
+
+  /* LATTER-SPACING */
+  --tracking-032: -0.32px;
+  --tracking-036: -0.36px;
+}
+
+@font-face {
+  font-family: "screamer";
+  src: url("/fonts/FKScreamerTrial-400.otf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "screamer";
+  src: url("/fonts/FKScreamerTrial-500.otf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "screamer";
+  src: url("/fonts/FKScreamerTrial-700.otf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "screamer";
+  src: url("/fonts/FKScreamerTrial-900.otf") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  @apply font-inter bg-white;
+}
+
+.primary-container {
+  @apply mx-auto w-full max-w-[1392px] px-4 xl:px-6;
+}
+
+.form-sub-heading {
+  @apply font-inter leading-l1 tracking-032 text-center text-sm text-black sm:text-base;
+}
+
+.form-heading {
+  @apply lg:text-56 font-screamer text-center text-3xl font-bold text-black uppercase sm:text-4xl md:text-5xl;
+}
+.no-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+.line-hover {
+  @apply bg-kingly absolute bottom-0 left-0 h-0.5 w-0 transition-all duration-300 ease-in-out group-hover:w-full;
+}
