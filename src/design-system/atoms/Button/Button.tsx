@@ -56,10 +56,10 @@ const Button: React.FC<ButtonProps> = ({
   };
   return (
     <button
-      disabled={disabled || loading}
+      disabled={disabled}
       className={`${variants[variant]} ${sizes[size]} ${
         active ? activeStyles[variant] : ""
-      } ${className} leading-l3 group relative flex cursor-pointer items-center justify-center gap-1 rounded-xl ring-offset-2 outline-2 outline-transparent transition-all duration-150 ease-in-out focus:ring-2 disabled:cursor-not-allowed disabled:opacity-40`}
+      } ${loading ? "pointer-events-none" : ""} ${className} leading-l3 group relative flex cursor-pointer items-center justify-center gap-1 rounded-xl ring-offset-2 outline-2 outline-transparent transition-all duration-150 ease-in-out focus:ring-2 disabled:cursor-not-allowed disabled:opacity-40`}
       onClick={onClick}
     >
       {loading ? (
