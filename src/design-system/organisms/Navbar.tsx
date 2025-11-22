@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
-import { LogoIcon } from "../atoms/icon/Icon";
+import { LogoIcon, QuestionMarkIcon } from "../atoms/icon/Icon";
+import Button from "../atoms/button/Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="flex items-center justify-between py-3 sm:py-5">
       <Link to={"/"}>
         <LogoIcon />
       </Link>
-      <button className=""></button>
+      <Button variant="blank">
+        <QuestionMarkIcon />
+        Assistenza
+        <span className="line-hover"></span>
+      </Button>
     </nav>
   );
 };

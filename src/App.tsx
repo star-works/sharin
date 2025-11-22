@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Homepage from "./design-system/pages/Homepage";
-import Forgetpage from "./design-system/pages/Forgetpage";
+import ForgetPasswordPage from "./design-system/pages/ForgetPasswordPage";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/forgot-password" element={<Forgetpage />} />
+          <Route path="/forgot-password" element={<ForgetPasswordPage />} />
         </Routes>
       </Router>
     </>
