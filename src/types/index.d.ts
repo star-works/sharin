@@ -1,8 +1,12 @@
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "outline" | "blank" | "danger";
+  variant?: "primary" | "secondary" | "tertiary" | "blank" | "danger";
+  size?: "lg" | "md" | "sm";
   onClick?: () => void;
   className?: string;
+  disabled?: boolean;
+  loading?: boolean;
+  active?: boolean;
 }
 interface LinkProps {
   children: React.ReactNode;

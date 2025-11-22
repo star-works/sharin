@@ -10,6 +10,19 @@
   --color-primary: #afafaf;
   --color-secondary: #767676;
   --color-kingly: #191919;
+  --color-shoeWax: #2b2b2b;
+  --color-sdhadowed: #4a4a4a;
+  --color-greyOfDarkness: #a3a3a3;
+  --color-hollandaise: #ffe943;
+  --color-dandelion: #ffe30a;
+  --color-mustard: #d0b800;
+  --color-glowlight: #fff6b4;
+  --color-superSilver: #f1f1f1;
+  --color-placebo: #e6e6e6;
+  --color-gainsboro: #d9d9d9;
+  --color-spiritstoneRed: #fc351b;
+  --color-aresRed: #e01f04;
+  --color-rufous: #ac1905;
 
   /* FONT-SIZE */
   --text-56: 56px;
@@ -22,6 +35,12 @@
   /* LATTER-SPACING */
   --tracking-032: -0.32px;
   --tracking-036: -0.36px;
+
+  /* SHADOWS */
+  --shadow-c1: 0 0 0 2px var(#191919, #fff), 0 0 0 4px var(#4a4a4a, #191919);
+  --shadow-c2: 0 0 0 2px var(#ffe943, #fff), 0 0 0 4px var(#d0b800, #191919);
+  --shadow-c3: 0 0 0 2px var(#d9d9d9, #191919);
+  --shadow-c4: 0 0 0 2px var(#fc351b, #fff), 0 0 0 4px var(#ac1905, #191919);
 }
 
 @font-face {
