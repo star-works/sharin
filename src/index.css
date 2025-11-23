@@ -75,15 +75,15 @@ body {
 }
 
 .primary-container {
-  @apply mx-auto w-full max-w-[1392px] px-4 xl:px-6;
+  @apply mx-auto w-full max-w-[1392px] px-3 xl:px-5;
 }
 
 .form-sub-heading {
-  @apply font-inter leading-l1 tracking-032 text-center text-sm text-black sm:text-base;
+  @apply font-inter leading-l1 tracking-032 text-center text-base text-black;
 }
 
 .form-heading {
-  @apply lg:text-56 font-screamer text-center text-3xl font-bold text-black uppercase sm:text-4xl md:text-5xl;
+  @apply text-56 font-screamer text-center text-3xl font-bold text-black uppercase;
 }
 .no-scrollbar::-webkit-scrollbar {
   @apply hidden;

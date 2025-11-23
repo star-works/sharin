@@ -28,6 +28,7 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
+    "react-hot-toast": "^2.6.0",
     "react-router-dom": "^7.9.6"
   }
 }

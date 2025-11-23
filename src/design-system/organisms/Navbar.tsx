@@ -4,7 +4,7 @@ import Button from "../atoms/button/Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between py-3 sm:py-5">
+    <nav className="flex items-center justify-between py-4 sm:py-5">
       <Link to={"/"}>
         <LogoIcon />
       </Link>

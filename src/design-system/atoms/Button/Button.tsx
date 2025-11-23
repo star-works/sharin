@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const sizes: Record<string, string> = {
-    lg: "px-4 text-sm sm:text-base lg:text-lg py-2 md:py-3 font-black",
+    lg: "px-4 text-lg py-3 font-black",
     md: "px-3 text-sm sm:text-base py-1.5 sm:py-2 font-bold",
     sm: "px-2 text-sm py-1.5 font-black",
   };
