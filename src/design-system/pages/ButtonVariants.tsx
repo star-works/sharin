@@ -1,4 +1,4 @@
-import Button from "../atoms/button/Button";
+import Button from "../button/Button";
 
 const ButtonVariants = () => {
   return (

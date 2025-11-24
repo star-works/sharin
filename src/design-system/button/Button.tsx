@@ -3,7 +3,7 @@ import {
   LoadingPrimaryIcon,
   LoadingSecondaryIcon,
   LoadingTertiaryIcon,
-} from "../icon/Icon";
+} from "../atoms/icon/Icon";
 
 const Button: React.FC<ButtonProps> = ({
   children,

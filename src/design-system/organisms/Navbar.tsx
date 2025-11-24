@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { LogoIcon, QuestionMarkIcon } from "../atoms/icon/Icon";
-import Button from "../atoms/button/Button";
+import Button from "../button/Button";
 
 const Navbar = () => {
   return (
