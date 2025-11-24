@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { type ChangeEvent } from "react";
 import { footerItems } from "../../utils/Helper";
 import Button from "../button/Button";
 import LinkPath from "../button/LinkPath";
@@ -6,39 +6,22 @@ import { FlagIcon } from "../atoms/icon/Icon";
 import Input from "../atoms/input/Input";
 import Footer from "../organisms/Footer";
 import Navbar from "../organisms/Navbar";
-import toast from "react-hot-toast";
+import { useEmailValidation } from "../../hooks/useEmailValidation";
+import { usePasswordRecovery } from "../../hooks/usePasswordRecovery";
 
 const ForgetPasswordPage = () => {
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
+  const { email, error, setEmail, setError, validateEmail, clearError } =
+    useEmailValidation();
 
-  const validateEmail = (value: string) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(value);
-  };
+  const { loading, handleSubmit } = usePasswordRecovery({
+    email,
+    validateEmail,
+    setError,
+  });
 
-  const handleSubmit = () => {
-    if (!email) {
-      setError("L'email è obbligatoria");
-      return;
-    }
-
-    if (!validateEmail(email)) {
-      setError("Inserisci un'email valida");
-      return;
-    }
-
-    setError("");
-    console.log("Recovery email sent:", email);
-
-    setLoading(true);
-    setError("");
-
-    setTimeout(() => {
-      toast.success("Link inviato alla tua email!");
-      setLoading(false);
-    }, 1500);
+  const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+    clearError();
   };
 
   return (
@@ -59,10 +42,7 @@ const ForgetPasswordPage = () => {
             className="mt-4 mb-4 md:mt-8"
             type="email"
             value={email}
-            onChange={(e: any) => {
-              setEmail(e.target.value);
-              setError("");
-            }}
+            onChange={handleEmailChange}
           />
           {error && (
             <p className="text-spiritstoneRed mb-4 w-full pl-1 text-start text-sm">
