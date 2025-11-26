@@ -1,7 +1,7 @@
 import { type ChangeEvent } from "react";
 import { footerItems } from "../../utils/Helper";
-import Button from "../button/Button";
-import LinkPath from "../button/LinkPath";
+import Button from "../atoms/button/Button";
+import LinkPath from "../atoms/button/LinkPath";
 import { FlagIcon } from "../atoms/icon/Icon";
 import Input from "../atoms/input/Input";
 import Footer from "../organisms/Footer";
